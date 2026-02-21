@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cuisine du Jiangsu - Les Huit Cuisines Chinoises</title>
+    <link rel="icon" href="images/icone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="Index.html"><span>La Cuisine du Jiangsu</span></a>
+        
+        <nav class="navbar2">
+            <a href="Index.html">← Retour à l'accueil</a>
+            <div class="dropdown">
+                <button class="dropbtn">Autres régions <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="region1.html">Shandong</a>
+                    <a href="region3.html">Anhui</a>
+                    <a href="region4.html">Zhejiang</a>
+                    <a href="region5.html">Fujian</a>
+                    <a href="region6.html">Guangdong</a>
+                    <a href="region7.html">Hunan</a>
+                    <a href="region8.html">Sichuan</a>
+                </div>
+            </div>
+        </nav>
+
+        <audio id="audio" src="musiques/region2.mp3" preload="metadata"></audio>
+        <button id="speaker" aria-label="Activer/désactiver la musique"><i class="fas fa-volume-mute"></i></button>
+    </header>
+
+    <button id="flèche" aria-label="Afficher/masquer la barre de navigation"><i class="fas fa-chevron-up"></i></button>
+
+    <main>
+        <section class="intro-region">
+            <div class="row">
+                <div class="col50 texte-intro">
+                    <h1>La Cuisine du Jiangsu (苏菜 - Sū cài)</h1>
+                    <p>
+                        La cuisine du Jiangsu, située dans l'est de la Chine, est née il y a plus de 2000 ans. 
+                        Elle est connue pour ses saveurs douces, délicates et légères, avec une grande attention portée à la présentation et aux ingrédients frais.
+                    </p>
+                    <p>
+                        Elle se divise en deux styles principaux : Huaiyang (élégant et sophistiqué) et Suzhou (plus doux et subtil). 
+                        Elle fait partie des huit grandes cuisines chinoises et est réputée pour ses techniques raffinées de braisage, vapeur et cuisson lente.
+                    </p>
+                </div>
+
+                <div class="col50 diapo">
+                    <div class="slide-container">
+                        <div class="effect slide">
+                            <img src="images/region2.png" alt="Travers de porc">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region2/jiangsu_image2.png" alt="Crevettes au thé de Long Jing">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region2/jiangsu_image3.png" alt="Soupe de lépisme de Brasenia">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region2/jiangsu_image4.png" alt="Boulettes de viande braisées à la sauce brune">
+                        </div>
+                    </div>
+                    <div class="dots" id="dot-container">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region2.png" alt="Travers de porc">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>T</span>ravers <span>D</span>e <span>P</span>orc</h2>
+                <p>
+                    Les travers de porc du Jiangsu sont marinés dans une sauce sucrée-salée à base de sauce soja, miel, vin de riz et épices, puis braisés lentement jusqu'à tendreté extrême. 
+                    La sauce caramélise et donne une belle couleur brillante.
+                </p>
+                <p class="caract">Texture : fondante et juteuse • Saveur : douce, riche, légèrement sucrée</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>C</span>revettes <span>A</span>u <span>T</span>hé <span>L</span>ong <span>J</span>ing</h2>
+                <p>
+                    Les crevettes fraîches sont marinées légèrement puis sautées rapidement avec du thé vert Longjing (Dragon bienveillant), qui apporte une note florale et fraîche unique.
+                </p>
+                <p class="caract">Texture : tendre et croquante • Saveur : délicate, parfumée au thé</p>
+            </div>
+            <div class="img">
+                <img src="images/region2/jiangsu_image2.png" alt="Crevettes au thé de Long Jing">
+            </div>
+        </article>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region2/jiangsu_image3.png" alt="Soupe de lépisme de Brasenia">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>a <span>S</span>oupe <span>D</span>e <span>L</span>épisme <span>D</span>e <span>B</span>rasenia</h2>
+                <p>
+                    Une soupe raffinée à base de lépisme (plante aquatique), bouillon clair, jambon et poulet. Très légère et élégante, typique du style Huaiyang.
+                </p>
+                <p class="caract">Texture : veloutée et légère • Saveur : subtile et umami</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>B</span>oulettes <span>D</span>e <span>V</span>iande <span>À</span> <span>L</span>a <span>S</span>auce <span>B</span>rune</h2>
+                <p>
+                    Boulettes de porc haché farcies, braisées lentement dans une sauce soja brune riche et parfumée. Tendres et savoureuses.
+                </p>
+                <p class="caract">Texture : moelleuse • Saveur : profonde, sucrée-salée</p>
+            </div>
+            <div class="img">
+                <img src="images/region2/jiangsu_image4.png" alt="Boulettes de viande braisées à la sauce brune">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <button id="bouton-haut">Haut de page</button>
+        <p id="auteur"></p>
+        <p class="auteur">Développé par Alexandre Vialle</p>
+    </footer>
+
+</body>
+</html>
