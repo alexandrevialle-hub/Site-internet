@@ -1,179 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title> La nourriture chinoise</title>
-    <meta charset="UFT-8">
-    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <title>La Cuisine Chinoise</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="icon" href="images/icone.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link r el="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <a class="logo"><span>La cuisine chinoise</span></a>
-        <ul class="navbar1">
-            <li><a href="#banniere">Accueil</a></li>
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#menu">Cuisines régionales</a></li>
-            <li><a href="#deroulement">Déroulement d'un repas</a></li>
-        </ul>
-    </header><br><br><br><br><br>
+        <a class="logo" href="#banniere"><span>La Cuisine Chinoise</span></a>
+        <nav class="navbar1">
+            <ul>
+                <li><a href="#banniere">Accueil</a></li>
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#cuisines">Cuisines Régionales</a></li>
+                <li><a href="#deroulement">Déroulement d'un Repas</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <main>
-    <section class="banniere" id="banniere">
-    <div class="contenu">
-        <h2>La nourriture chinoise</h2>
-    </div>
-    </section>
+        <section class="banniere" id="banniere">
+            <div class="contenu">
+                <h2>La Cuisine Chinoise</h2>
+            </div>
+        </section>
         
-    <section class="presentation" id="presentation">
-        <div class="row">
-            <div class="col50">
-                <p class="titre-texte"><span>P</span>résentation</p>
+        <section class="presentation" id="presentation">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titre-texte"><span>P</span>résentation</h2>
+                    <p>
+                        La cuisine chinoise est l'une des plus réputées au monde et sans doute celle qui présente le plus de variations régionales. 
+                        Les plats traditionnels chinois sont célèbres pour leur couleur, leur arôme, leur goût, leur signification et leur apparence. 
+                        En raison de l'immensité du territoire chinois, il existe de nombreuses différences culinaires liées aux climats, à l'histoire, 
+                        aux ingrédients locaux et aux coutumes. Les huit grandes cuisines régionales les plus connues sont celles du Shandong, du Jiangsu, 
+                        de l'Anhui, du Zhejiang, du Fujian, du Guangdong, du Hunan et du Sichuan. Ces traditions culinaires reflètent la diversité culturelle 
+                        et géographique de la Chine, influençant même les cuisines internationales.
+                    </p>
+                </div>
+                <div class="col50">
+                    <div class="img">
+                        <img src="images/carte_regions.png" alt="Carte des régions culinaires de la Chine">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cuisines" id="cuisines">
+            <div class="titre">
+                <h2 class="titre-texte"><span>C</span>uisines <span>R</span>égionales</h2>
                 <p>
-                    La cuisine chinoise est une des plus réputées au monde, et sans doute celle qui comporte le plus de variations.
-                    En effet, les plats traditionnels chinois sont réputés pour leur couleur, leur arôme, leur goût,
-                    leur signification et leur apparence.<br>
-                    La Chine étant un pays immense, il existe de nombreuses différences régionales dans la cuisine en raison des climats,
-                    de l'histoire, des ingrédients locaux, des coutumes culinaires, etc.
-                    Les cuisines régionales les plus connues et les plus répandues sont celles du Shandong, du Jiangsu, de l'Anhui,
-                    du Zhejiang, du Fujian, du Guangdong, du Hunan et du Sichuan.
-                </p>
+                    Découvrez les huit grandes traditions culinaires chinoises, chacune influencée par son environnement local et son histoire.
+                    Cliquez sur une région pour en savoir plus sur ses plats emblématiques et ses caractéristiques uniques.
+                </p>            
             </div>
-            <div class="col50">
-                <div class="img">
-                    <img src="images/carte_regions.png" alt="Carte de la Chine">
+            <div class="contenu">
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region1.png" alt="Cuisine du Shandong">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region1.html">Shandong</a></h3>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="menu" id="menu">
-        <div class="titre">
-            <h2 class="titre-texte"><span>C</span>uisines<span> R</span>égionales</h2>
-            <p>La cuisine chinoise est une des plus réputées au monde, et sans doute celle qui comporte le plus de variations.<br>
-               Voici les 8 cuisines régionales les plus connues et les plus répandues en Chine:
-            </p>            
-        </div>
-        <div class="contenu">
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region1.png" alt="La cuisine du Shandong" usemap="#region1">
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region2.png" alt="Cuisine du Jiangsu">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region2.html">Jiangsu</a></h3>
+                    </div>
                 </div>
-                <div class="text">
-                    <h3><a href="region1.html">Shandong</a></h3>
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region3.png" alt="Cuisine de l'Anhui">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region3.html">Anhui</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region2.png" alt="La cuisine du Jiangsu" usemap="#region2">
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region4.png" alt="Cuisine du Zhejiang">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region4.html">Zhejiang</a></h3>
+                    </div>
                 </div>
-                <div class="text">
-                    <h3><a href="region2.html">Jiangsu</a></h3>
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region5.png" alt="Cuisine du Fujian">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region5.html">Fujian</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region3.png" alt="La cuisine de l'Anhui" usemap="#region3">
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region6.png" alt="Cuisine du Guangdong">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region6.html">Guangdong</a></h3>
+                    </div>
                 </div>
-                <div class="text">
-                    <h3><a href="region3.html">Anhui</a></h3>
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region7.png" alt="Cuisine du Hunan">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region7.html">Hunan</a></h3>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region4.png" alt="La cuisine du Zhejiang" usemap="#region4">
-                </div>
-                <div class="text">
-                    <h3><a href="region4.html">Zhejiang</a></h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region5.png" alt="La cuisine du Fujian" usemap="#region5">
-                </div>
-                <div class="text">
-                    <h3><a href="region5.html">Fujian</a></h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region6.png" alt="La cuisine du Guangdong" usemap="#region6">
-                </div>
-                <div class="text">
-                    <h3><a href="region6.html">Guangdong</a></h3>
+                <div class="box">
+                    <div class="imbox">
+                        <img src="images/region8.png" alt="Cuisine du Sichuan">
+                    </div>
+                    <div class="text">
+                        <h3><a href="region8.html">Sichuan</a></h3>
+                    </div>
                 </div>
             </div>
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region7.png" alt="La cuisine du Huanan" usemap="#region7">
+        </section>
+        
+        <section class="deroulement" id="deroulement">
+            <h2 class="titre-texte"><span>D</span>éroulement <span>d'</span>un <span>R</span>epas</h2>
+            <div class="row">
+                <div class="col50">
+                    <p>
+                        Un repas chinois traditionnel commence par l'accueil des invités par l'hôte autour d'une grande table ronde équipée d'un plateau tournant. 
+                        Cela permet à chacun de se servir facilement des plats partagés, contrairement à la tradition occidentale où chaque convive a son assiette individuelle. 
+                        Le placement à table respecte des règles de hiérarchie : les aînés ou les personnes d'autorité s'assoient au centre, souvent face à une télévision ou adossés à un mur, 
+                        en signe de respect. Les plats sont servis en plusieurs vagues, en commençant par les entrées froides, suivies des plats chauds, et se terminant par des soupes ou des desserts. 
+                        L'harmonie des saveurs (sucré, salé, acide, amer, piquant) est primordiale.
+                    </p>
                 </div>
-                <div class="text">
-                    <h3><a href="region7.html">Hunan</a></h3>
+                <div class="col50 video">
+                    <img src="images/dinner.png" 
+                        alt="Dîner traditionnel chinois à table ronde avec plateau tournant" 
+                        style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
                 </div>
-            </div>
-            <div class="box">
-                <div class="imbox">
-                    <img src="images/region8.png" alt="La cuisine du Sichuan" usemap="#region8">
-                </div>
-                <div class="text">
-                    <h3><a href="region8.html">Sichuan</a></h3>
-                </div>
-            </div>
-        </div>
-        <map name="region1">
-            <area shape="default" href="region1.html" alt="La cuisine du Shandong" />
-        </map>
-        <map name="region2">
-            <area shape="default" href="region2.html" alt="La cuisine du Jiangsu" />
-        </map>
-        <map name="region3">
-            <area shape="default" href="region3.html" alt="La cuisine de l'Anhui" />
-        </map>
-        <map name="region4">
-            <area shape="default" href="region4.html" alt="La cuisine du Zhejiang" />
-        </map>
-        <map name="region5">
-            <area shape="default" href="region5.html" alt="La cuisine du Fujian" />
-        </map>
-        <map name="region6">
-            <area shape="default" href="region6.html" alt="La cuisine du Guangdong" />
-        </map>
-        <map name="region7">
-            <area shape="default" href="region7.html" alt="La cuisine du Hunan" />
-        </map>
-        <map name="region8">
-            <area shape="default" href="region8.html" alt="La cuisine du Sichuan" />
-        </map>
-    </section>
-    
-    <section class="deroulement" id="deroulement">
-        <h2 class="titre-texte1"><span>D</span>éroulemnt<span> D'</span>un<span> R</span>epas</h2><br>
-        <div class="row">
-            <div class="col50">
-                <p>
-                    Tout d'abord, accompagnés par l'hôte, les invités vont se mettre autour d'une table.
-                    Il s'agit en général d'une grande table ronde avec un plateau tournant qui permet aux gens de piocher dans
-                    les différents plats sans se lever. En effet, les Chinois partagent les plats au lieu de prendre individuellement un plat,
-                    ce qui est différent par rapport à l'Occident. <br>
-                    Par rapport au “plan de table”, les invités s'assoient selon un mode déterminé.
-                    Par exemple, on laisse les aînés ou les personnes d'autorité se mettre au centre, normalement en face d'une télévision
-                    ou derrière un mur par signe de respect.
-                </p>
-            </div>
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/3Bd5mVPEZI4?autoplay=1&mute=1" title="vidéo d'un repas"
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
+        </section>
     </main>
     <footer>
-        <p class="heure"><span id="heure"></span> heures <span id="minute"></span> minutes et <span id="seconde"></span> secondes</p>
+        <p id="auteur"></p>
+        <p class="auteur">Développé par Alexandre Vialle</p>
     </footer>
 </body>
 </html>
