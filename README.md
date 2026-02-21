@@ -1,2 +1,2 @@
 # Site-internet
-Site internet présent la nourriture des différentes régions de la Chine
+Site internet présentant la nourriture des différentes régions de la Chine
