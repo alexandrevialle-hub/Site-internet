@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cuisine du Guangdong - Les Huit Cuisines Chinoises</title>
+    <link rel="icon" href="images/icone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="Index.html"><span>La Cuisine du Guangdong</span></a>
+        
+        <nav class="navbar2">
+            <a href="Index.html">← Retour à l'accueil</a>
+            <div class="dropdown">
+                <button class="dropbtn">Autres régions <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="region1.html">Shandong</a>
+                    <a href="region2.html">Jiangsu</a>
+                    <a href="region3.html">Anhui</a>
+                    <a href="region4.html">Zhejiang</a>
+                    <a href="region5.html">Fujian</a>
+                    <a href="region7.html">Hunan</a>
+                    <a href="region8.html">Sichuan</a>
+                </div>
+            </div>
+        </nav>
+
+        <audio id="audio" src="musiques/region6.mp3" preload="metadata"></audio>
+        <button id="speaker" aria-label="Activer/désactiver la musique"><i class="fas fa-volume-mute"></i></button>
+    </header>
+
+    <button id="flèche" aria-label="Afficher/masquer la barre de navigation"><i class="fas fa-chevron-up"></i></button>
+
+    <main>
+        <section class="intro-region">
+            <div class="row">
+                <div class="col50 texte-intro">
+                    <h1>La Cuisine du Guangdong (粤菜 - Yuè cài)</h1>
+                    <p>
+                        La cuisine du Guangdong (aussi appelée cuisine cantonaise) est l'une des plus célèbres et des plus raffinées de Chine. 
+                        Elle est connue pour sa fraîcheur extrême des ingrédients (surtout fruits de mer), ses saveurs subtiles et équilibrées, et sa grande variété de techniques (vapeur, sauté rapide, braisage, friture légère).
+                    </p>
+                    <p>
+                        Elle met l'accent sur la présentation élégante et la saisonnalité. Elle est à l'origine des célèbres dim sum et est très influente dans la cuisine chinoise internationale (surtout à Hong Kong et dans les Chinatowns du monde).
+                    </p>
+                </div>
+
+                <div class="col50 diapo">
+                    <div class="slide-container">
+                        <div class="effect slide">
+                            <img src="images/region6.png" alt="Nouilles de riz sautées au bœuf">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region6/guangdong_image2.png" alt="Pigeon rôti">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region6/guangdong_image3.png" alt="Pattes de poulet">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region6/guangdong_image4.png" alt="Dim sum">
+                        </div>
+                    </div>
+                    <div class="dots" id="dot-container">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region6.png" alt="Nouilles de riz sautées au bœuf">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>N</span>ouilles <span>D</span>e <span>R</span>iz <span>S</span>autées <span>A</span>u <span>B</span>œuf</h2>
+                <p>
+                    Nouilles de riz larges sautées à haute température avec des lamelles de bœuf marinées, légumes verts et sauce soja légèrement sucrée. 
+                    Plat emblématique du Guangdong, rapide et savoureux.
+                </p>
+                <p class="caract">Texture : nouilles légèrement croustillantes • Saveur : umami, légèrement sucrée</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>P</span>igeon <span>R</span>ôti</h2>
+                <p>
+                    Pigeon mariné avec cinq-épices, sauce soja et miel, puis rôti jusqu'à ce que la peau soit croustillante et brillante. 
+                    Spécialité cantonaise très appréciée, servie avec une sauce hoisin.
+                </p>
+                <p class="caract">Texture : peau croustillante, chair tendre • Saveur : parfumée et caramélisée</p>
+            </div>
+            <div class="img">
+                <img src="images/region6/guangdong_image2.png" alt="Pigeon rôti">
+            </div>
+        </article>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region6/guangdong_image3.png" alt="Pattes de poulet">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>P</span>attes <span>D</span>e <span>P</span>oulet</h2>
+                <p>
+                    Pattes de poulet braisées lentement dans une sauce soja sucrée-épicée, souvent avec des champignons et du vin de riz. 
+                    Texture gélatineuse très recherchée, typique des dim sum et plats quotidiens.
+                </p>
+                <p class="caract">Texture : gélatineuse et tendre • Saveur : sucrée-salée, parfumée</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>D</span>im <span>S</span>um</h2>
+                <p>
+                    Petits mets vapeur ou frits servis en portions individuelles (crevettes, porc, légumes, crevettes enrobées de pâte de riz...). 
+                    Véritable institution du Guangdong, souvent accompagnés de thé.
+                </p>
+                <p class="caract">Texture : variée (moelleuse, croustillante) • Saveur : subtile et fraîche</p>
+            </div>
+            <div class="img">
+                <img src="images/region6/guangdong_image4.png" alt="Dim sum">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <button id="bouton-haut">Haut de page</button>
+        <p id="auteur"></p>
+        <p class="auteur">Développé par Alexandre Vialle</p>
+    </footer>
+
+</body>
+</html>
