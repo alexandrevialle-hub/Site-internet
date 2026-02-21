@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cuisine du Shandong - Les Huit Cuisines Chinoises</title>
+    <link rel="icon" href="images/icone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="Index.html"><span>La Cuisine du Shandong</span></a>
+        
+        <nav class="navbar2">
+            <a href="Index.html">← Retour à l'accueil</a>
+            <div class="dropdown">
+                <button class="dropbtn">Autres régions <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="region2.html">Jiangsu</a>
+                    <a href="region3.html">Anhui</a>
+                    <a href="region4.html">Zhejiang</a>
+                    <a href="region5.html">Fujian</a>
+                    <a href="region6.html">Guangdong</a>
+                    <a href="region7.html">Hunan</a>
+                    <a href="region8.html">Sichuan</a>
+                </div>
+            </div>
+        </nav>
+
+        <audio id="audio" src="musiques/region1.mp3" preload="metadata"></audio>
+        <button id="speaker" aria-label="Activer/désactiver la musique"><i class="fas fa-volume-mute"></i></button>
+    </header>
+
+    <button id="flèche" aria-label="Afficher/masquer la barre de navigation"><i class="fas fa-chevron-up"></i></button>
+
+    <main>
+        <section class="intro-region">
+            <div class="row">
+                <div class="col50 texte-intro">
+                    <h1>La Cuisine du Shandong (鲁菜 - Lǔ cài)</h1>
+                    <p>
+                        Originaire de la province côtière de l'Est, la cuisine du Shandong est considérée comme l'une des plus anciennes et des plus influentes de Chine.
+                        Elle se distingue par des saveurs <strong>légères, raffinées et salées</strong>, une grande maîtrise des techniques de cuisson (surtout braisage, friture et soupe claire) 
+                        et un usage important des produits de la mer.
+                    </p>
+                    <p>
+                        Surnommée « cuisine Lu », elle a servi de base à la cuisine impériale des dynasties Ming et Qing. 
+                        On y retrouve des plats élégants, équilibrés, tendres à l'intérieur et croustillants à l'extérieur.
+                    </p>
+                </div>
+
+                <div class="col50 diapo">
+                    <div class="slide-container">
+                        <div class="effect slide">
+                            <img src="images/region1.png" alt="Carpe aigre-douce">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region1/shandong_image2.png" alt="Tofu mariné typique du Shandong">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region1/shandong_image3.png" alt="Concombre de mer braisé">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region1/shandong_image4.png" alt="Poulet de Dezhou">
+                        </div>
+                    </div>
+                    <div class="dots" id="dot-container">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region1.png" alt="Carpe aigre-douce">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>a <span>C</span>arpe <span>A</span>igre-<span>D</span>ouce</h2>
+                <p>
+                    Plat emblématique du Shandong : la carpe est frite jusqu'à obtenir une peau croustillante, puis nappée d'une sauce aigre-douce brillante 
+                    (vinaigre, sucre, ketchup, sauce soja, ail). Souvent agrémentée de légumes croquants (poivrons, oignons, ananas).
+                </p>
+                <p class="caract">Texture : croustillante dehors, tendre dedans • Saveur : équilibre parfait entre sucré et acide</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>T</span>ofu <span>d</span>u <span>S</span>handong</h2>
+                <p>
+                    Tofu ferme mariné puis légèrement frit ou cuit à la vapeur, assaisonné d'une sauce umami riche (sauce soja, huile de sésame, vinaigre, ail, parfois ciboulette).
+                    Simple, sain et très représentatif de l'approche légère de la cuisine Lu.
+                </p>
+                <p class="caract">Texture : soyeuse et ferme • Profil : umami délicat, très digeste</p>
+            </div>
+            <div class="img">
+                <img src="images/region1/shandong_image2.png" alt="Tofu mariné typique du Shandong">
+            </div>
+        </article>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region1/shandong_image3.png" alt="Concombre de mer braisé">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>C</span>oncombre <span>d</span>e <span>M</span>er <span>B</span>raisé</h2>
+                <p>
+                    Ingrédient de luxe en Chine : le concombre de mer (holothurie) est réhydraté, puis braisé lentement dans un bouillon parfumé au gingembre, 
+                    ail, sauce soja, vin de Shaoxing et un soupçon de sucre. Texture gélatineuse et goût iodé très recherché.
+                </p>
+                <p class="caract">Texture : fondante • Saveur : umami marin profond</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>P</span>oulet <span>d</span>e <span>D</span>ezhou</h2>
+                <p>
+                    Poulet entier cuit longuement dans un bouillon aromatique aux épices et herbes, puis refroidi. Résultat : chair extrêmement tendre et juteuse, 
+                    peau brillante et parfumée. Souvent servi froid avec une sauce à base du bouillon.
+                </p>
+                <p class="caract">Texture : fondante • Saveur : subtilement épicée et parfumée</p>
+            </div>
+            <div class="img">
+                <img src="images/region1/shandong_image4.png" alt="Poulet de Dezhou">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <button id="bouton-haut">Haut de page</button>
+        <p id="auteur"></p>
+        <p class="auteur">Développé par Alexandre Vialle</p>
+    </footer>
+
+</body>
+</html>
