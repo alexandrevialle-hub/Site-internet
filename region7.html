@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cuisine du Hunan - Les Huit Cuisines Chinoises</title>
+    <link rel="icon" href="images/icone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="Index.html"><span>La Cuisine du Hunan</span></a>
+        
+        <nav class="navbar2">
+            <a href="Index.html">← Retour à l'accueil</a>
+            <div class="dropdown">
+                <button class="dropbtn">Autres régions <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="region1.html">Shandong</a>
+                    <a href="region2.html">Jiangsu</a>
+                    <a href="region3.html">Anhui</a>
+                    <a href="region4.html">Zhejiang</a>
+                    <a href="region5.html">Fujian</a>
+                    <a href="region6.html">Guangdong</a>
+                    <a href="region8.html">Sichuan</a>
+                </div>
+            </div>
+        </nav>
+
+        <audio id="audio" src="musiques/region7.mp3" preload="metadata"></audio>
+        <button id="speaker" aria-label="Activer/désactiver la musique"><i class="fas fa-volume-mute"></i></button>
+    </header>
+
+    <button id="flèche" aria-label="Afficher/masquer la barre de navigation"><i class="fas fa-chevron-up"></i></button>
+
+    <main>
+        <section class="intro-region">
+            <div class="row">
+                <div class="col50 texte-intro">
+                    <h1>La Cuisine du Hunan (湘菜 - Xiāng cài)</h1>
+                    <p>
+                        La cuisine du Hunan, située dans le sud de la Chine, est célèbre pour son goût très épicé et piquant, grâce à l'utilisation abondante de piments frais, de poivre de Sichuan et de sauces relevées.
+                        Elle met en avant une grande variété d'ingrédients (porc, poisson d'eau douce, légumes, champignons) et privilégie les techniques de cuisson qui conservent la fraîcheur et la texture.
+                    </p>
+                    <p>
+                        Elle est connue pour son équilibre entre piquant, aigre, salé et umami, avec des plats audacieux et très parfumés. Elle fait partie des huit grandes cuisines chinoises et est souvent comparée à la cuisine du Sichuan, mais avec un piquant plus frais.
+                    </p>
+                </div>
+
+                <div class="col50 diapo">
+                    <div class="slide-container">
+                        <div class="effect slide">
+                            <img src="images/region7.png" alt="Tête de poisson cuite à la vapeur avec piment haché">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region7/hunan_image2.png" alt="Légumes sautés aux piments">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region7/hunan_image3.png" alt="Poulet aux épices">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region7/hunan_image4.png" alt="Poulet fort au chili">
+                        </div>
+                    </div>
+                    <div class="dots" id="dot-container">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region7.png" alt="Tête de poisson cuite à la vapeur avec piment haché">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>a <span>T</span>ête <span>D</span>e <span>P</span>oisson <span>C</span>uite <span>À</span> <span>L</span>a <span>V</span>apeur <span>A</span>vec <span>P</span>iment <span>H</span>aché</h2>
+                <p>
+                    Tête de poisson entière cuite à la vapeur puis nappée d'une sauce au piment haché frais, ail, gingembre et huile. 
+                    Plat emblématique du Hunan, très piquant et parfumé.
+                </p>
+                <p class="caract">Texture : chair fondante • Saveur : extrêmement piquante et umami</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>L</span>égumes <span>S</span>autés <span>A</span>ux <span>P</span>iments</h2>
+                <p>
+                    Légumes variés (brocoli, aubergine, poivrons, haricots) sautés rapidement au wok avec beaucoup de piments frais et poivre de Sichuan. 
+                    Plat végétarien très populaire, croustillant et explosif.
+                </p>
+                <p class="caract">Texture : croquante • Saveur : piquant intense, frais</p>
+            </div>
+            <div class="img">
+                <img src="images/region7/hunan_image2.png" alt="Légumes sautés aux piments">
+            </div>
+        </article>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region7/hunan_image3.png" alt="Poulet aux épices">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>P</span>oulet <span>A</span>ux <span>É</span>pices</h2>
+                <p>
+                    Morceaux de poulet marinés puis sautés avec une généreuse quantité d'épices (piment, poivre de Sichuan, ail, gingembre). 
+                    Plat très relevé et parfumé, typique du Hunan.
+                </p>
+                <p class="caract">Texture : tendre et croustillante • Saveur : épicée et numbing</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>P</span>oulet <span>F</span>ort <span>A</span>u <span>C</span>hili</h2>
+                <p>
+                    Poulet haché ou en morceaux cuisiné dans une sauce rouge très pimentée avec beaucoup de piments secs et frais. 
+                    Un classique brûlant et addictif du Hunan.
+                </p>
+                <p class="caract">Texture : juteuse • Saveur : feu intense, umami</p>
+            </div>
+            <div class="img">
+                <img src="images/region7/hunan_image4.png" alt="Poulet fort au chili">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <button id="bouton-haut">Haut de page</button>
+        <p id="auteur"></p>
+        <p class="auteur">Développé par Alexandre Vialle</p>
+    </footer>
+
+</body>
+</html>
