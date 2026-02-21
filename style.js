@@ -101,19 +101,3 @@ function topFunction() {
 }
 
 document.getElementById("bouton-haut").addEventListener("click", topFunction);
-
-
-
-// Création d'un tableau de phrases de remerciement
-var phrases = [
-  "Merci pour votre visite !",
-  "Merci de prendre le temps de visiter mon site !",
-  "Merci d'avoir pris le temps de visiter mon site web."
-];
-
-// Sélection aléatoire d'une phrase de remerciement à afficher
-var index = Math.floor(Math.random() * phrases.length);
-var phrase = phrases[index];
-
-// Affichage de la phrase de remerciement dans la div "remerciements"
-document.getElementById("remerciements").innerHTML = phrase;
