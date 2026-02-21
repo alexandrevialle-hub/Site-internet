@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cuisine du Fujian - Les Huit Cuisines Chinoises</title>
+    <link rel="icon" href="images/icone.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="Index.html"><span>La Cuisine du Fujian</span></a>
+        
+        <nav class="navbar2">
+            <a href="Index.html">← Retour à l'accueil</a>
+            <div class="dropdown">
+                <button class="dropbtn">Autres régions <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="region1.html">Shandong</a>
+                    <a href="region2.html">Jiangsu</a>
+                    <a href="region3.html">Anhui</a>
+                    <a href="region4.html">Zhejiang</a>
+                    <a href="region6.html">Guangdong</a>
+                    <a href="region7.html">Hunan</a>
+                    <a href="region8.html">Sichuan</a>
+                </div>
+            </div>
+        </nav>
+
+        <audio id="audio" src="musiques/region5.mp3" preload="metadata"></audio>
+        <button id="speaker" aria-label="Activer/désactiver la musique"><i class="fas fa-volume-mute"></i></button>
+    </header>
+
+    <button id="flèche" aria-label="Afficher/masquer la barre de navigation"><i class="fas fa-chevron-up"></i></button>
+
+    <main>
+        <section class="intro-region">
+            <div class="row">
+                <div class="col50 texte-intro">
+                    <h1>La Cuisine du Fujian (闽菜 - Mǐn cài)</h1>
+                    <p>
+                        La cuisine du Fujian, située dans le sud-est de la Chine face à Taïwan, est réputée pour sa grande richesse en fruits de mer (crevettes, crabes, huîtres, poulpe...) et pour ses saveurs umami profondes, souvent obtenues par fermentation, braisage ou cuisson en pot en terre.
+                    </p>
+                    <p>
+                        Elle est influencée par la proximité de la mer et des montagnes, avec une utilisation abondante de thé, de vin de riz et d'herbes. Elle fait partie des huit grandes cuisines chinoises et est connue pour sa variété et son équilibre entre mer et terre.
+                    </p>
+                </div>
+
+                <div class="col50 diapo">
+                    <div class="slide-container">
+                        <div class="effect slide">
+                            <img src="images/region5.png" alt="Riz sauté à la Fujian">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region5/fujian_image2.png" alt="Boulettes de poisson">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region5/fujian_image3.png" alt="Rôti de porc de la ville de Fuzhou">
+                        </div>
+                        <div class="effect slide">
+                            <img src="images/region5/fujian_image4.png" alt="Poulpe de Fujian">
+                        </div>
+                    </div>
+                    <div class="dots" id="dot-container">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region5.png" alt="Riz sauté à la Fujian">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>R</span>iz <span>S</span>auté <span>À</span> <span>L</span>a <span>F</span>ujian</h2>
+                <p>
+                    Riz frit avec crevettes, porc, œufs, légumes et épices locales. Texture légèrement croustillante et saveur complexe grâce au mélange d'ingrédients frais et de sauces umami.
+                </p>
+                <p class="caract">Texture : croustillante et moelleuse • Saveur : riche, parfumée</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>es <span>B</span>oulettes <span>D</span>e <span>P</span>oisson</h2>
+                <p>
+                    Boulettes faites de pâte de poisson frais, souvent farcies de crevettes ou porc, puis frites ou cuites à la vapeur. Croustillantes dehors, tendres dedans, typiques de la côte.
+                </p>
+                <p class="caract">Texture : croustillante et juteuse • Saveur : iodée et délicate</p>
+            </div>
+            <div class="img">
+                <img src="images/region5/fujian_image2.png" alt="Boulettes de poisson">
+            </div>
+        </article>
+
+        <article class="plat nourriture-description1">
+            <div class="img">
+                <img src="images/region5/fujian_image3.png" alt="Rôti de porc de la ville de Fuzhou">
+            </div>
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>R</span>ôti <span>D</span>e <span>P</span>orc <span>D</span>e <span>F</span>uzhou</h2>
+                <p>
+                    Porc mariné dans une sauce sucrée-épicée (sauce soja, vin de riz, sucre, cinq-épices) puis rôti lentement. Résultat : viande fondante avec une peau croustillante et brillante.
+                </p>
+                <p class="caract">Texture : tendre et croustillante • Saveur : sucrée-salée profonde</p>
+            </div>
+        </article>
+
+        <article class="plat nourriture-description2">
+            <div class="contenu-texte">
+                <h2><span>L</span>e <span>P</span>oulpe <span>D</span>e <span>F</span>ujian</h2>
+                <p>
+                    Poulpe frais mariné puis cuit à la vapeur ou braisé dans une sauce épicée (sauce soja, piment, vin de Shaoxing). Plat iodé et relevé, très apprécié sur la côte.
+                </p>
+                <p class="caract">Texture : tendre et élastique • Saveur : épicée, umami marin</p>
+            </div>
+            <div class="img">
+                <img src="images/region5/fujian_image4.png" alt="Poulpe de Fujian">
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <button id="bouton-haut">Haut de page</button>
+        <p id="auteur"></p>
+        <p class="auteur">Développé par Alexandre Vialle</p>
+    </footer>
+
+</body>
+</html>
