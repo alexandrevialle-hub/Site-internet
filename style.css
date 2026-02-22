@@ -300,6 +300,7 @@ footer {
 .dropdown:hover .dropbtn,
 .dropdown:hover .dropbtn:focus {
     color: #b90606;
+    background: rgba(185, 6, 6, 0.1);
 }
 
 .dropdown:hover .dropdown-content,
@@ -424,6 +425,10 @@ footer {
     background-color: #b90606;
 }
 
+.slide-container > div:first-child {
+    display: block !important;
+}
+
 /* Blocs plats */
 .plat {
     display: flex;
@@ -436,8 +441,8 @@ footer {
     border: 1px solid #e0d0b0;
 }
 
-.plat:nth-child(odd)  { background: #fef2e3; }
-.plat:nth-child(even) { background: #fef2e3; }
+.plat:nth-child(odd)  { background: #f6e9d8; }
+.plat:nth-child(even) { background: #f6e9d8; }
 
 .plat .img {
     flex: 0 0 38%;
@@ -503,7 +508,7 @@ footer {
     right: 30px;
     padding: 12px 24px;
     background: #faebd7;
-    color: #000;
+    color: #b90606;
     font-size: 1.1rem;
     font-weight: 600;
     border: 2px solid #b90606;
